@@ -4,6 +4,7 @@ class a{
     public: 
     int b;
     char c,d;
+    //greedy alignment and padding 
 };
 class Student
 {
