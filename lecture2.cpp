@@ -13,6 +13,7 @@ class customer{
         account_number=123;
         balance=1000;
 
+    
     };
     //parameterized constructor //custurctor overloading
     // customer(string name, int account_number, int balance){
@@ -33,8 +34,11 @@ class customer{
         balance=c.balance;
 
     };
-
+    //destructor : 
+    ~customer(){
+        cout<<"destructor is called";
     };
+
     int main(){
         customer a1,a2,a3;
         a1.display();
