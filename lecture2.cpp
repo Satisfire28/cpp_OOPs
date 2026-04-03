@@ -27,6 +27,12 @@ class customer{
     void display(){
         cout<<name<<" "<<account_number<<" "<<balance<<endl;
     };
+    customer(customer &c){
+        name=c.name;
+        account_number=c.account_number;
+        balance=c.balance;
+
+    };
 
     };
     int main(){
@@ -36,5 +42,7 @@ class customer{
         customer c2("vishal lodhi",123,1000);
         c2.display();
         c3.display();
+        customer a4(a1);
+        a4.display();
         return 0;
 };
